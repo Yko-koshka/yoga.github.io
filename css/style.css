@@ -1,0 +1,62 @@
+/* lato-700 - latin */
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Lato Bold"), local("Lato-Bold"),
+    url("../fonts/lato-v16-latin-700.woff2") format("woff2"),
+    url("../fonts/lato-v16-latin-700.woff") format("woff");
+}
+
+/* montserrat-regular - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montserrat Regular"), local("Montserrat-Regular"),
+    url("../fonts/montserrat-v14-latin-regular.woff2") format("woff2"),
+    url("../fonts/montserrat-v14-latin-regular.woff") format("woff");
+}
+
+/* baloo-bhai-2-regular - latin */
+@font-face {
+  font-family: "Baloo Bhai 2";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Baloo Bhai 2 Regular"), local("BalooBhai2-Regular"),
+    url("../fonts/baloo-bhai-2-v1-latin-regular.woff2") format("woff2"),
+    url("../fonts/baloo-bhai-2-v1-latin-regular.woff") format("woff");
+}
+/* baloo-bhai-2-700 - latin */
+@font-face {
+  font-family: "Baloo Bhai 2";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Baloo Bhai 2 Bold"), local("BalooBhai2-Bold"),
+    url("../fonts/baloo-bhai-2-v1-latin-700.woff2") format("woff2"),
+    url("../fonts/baloo-bhai-2-v1-latin-700.woff") format("woff");
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.container {
+  max-width: 1270px;
+  margin: 0 auto;
+}
