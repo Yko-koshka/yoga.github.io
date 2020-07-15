@@ -106,6 +106,7 @@ ul {
   display: inline-block;
   font-family: "Baloo Bhai 2", serif;
   font-weight: 700;
+  text-transform: uppercase;
   color: #494f4e;
   font-size: 20px;
   padding-left: 80px;
@@ -144,7 +145,7 @@ ul {
 
 .yoga-inner__title {
   font-family: "Baloo Bhai 2", serif;
-  font-size: 105px;
+  font-size: 95px;
   color: #6c9894;
 }
 
@@ -159,7 +160,7 @@ ul {
   height: 35px;
   text-transform: uppercase;
   font-family: "Lato", serif;
-  font-size: 18px;
+  font-size: 17px;
   color: #fff;
   background-color: #6c9894;
   border: none;
@@ -171,9 +172,49 @@ ul {
 
 .about {
   background-color: #6c9894;
+  padding: 130px 0 120px;
+}
+
+.about-inner__top {
+  width: 63%;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.about-inner__title {
+  font-family: "Baloo Bhai 2", serif;
+  font-weight: 700;
+  font-size: 75px;
+  color: #fff;
+  padding-bottom: 15px;
+}
+
+.about-inner__text {
+  font-size: 30px;
+  color: #fff;
+  padding-bottom: 15px;
 }
 
 .about-inner__items {
   display: flex;
   justify-content: space-between;
+  text-align: center;
+}
+
+.about-inner__img {
+  padding-bottom: 15px;
+}
+
+.about-inner__subtitle {
+  font-family: "Baloo Bhai 2", serif;
+  font-weight: 700;
+  font-size: 36px;
+  color: #fff;
+  padding-bottom: 20px;
+}
+
+.about-inner__body-text {
+  font-size: 22px;
+  color: #fff;
 }
