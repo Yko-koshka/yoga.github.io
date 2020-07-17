@@ -134,21 +134,37 @@ ul {
 }
 
 .header-inner__links {
+  display: flex;
+  justify-content: flex-end;
   background-color: #e2ede8;
+  padding-right: 100px;
 }
 
 .header-inner__link {
+  padding-left: 75px;
+}
+
+.header-inner__link:nth-child(1) {
+  padding-left: 0px;
+}
+
+.header-inner__url {
   display: inline-block;
   color: #494f4e;
   font-size: 20px;
-  padding-left: 80px;
+  padding: 5px 25px;
+  transition: 0.3s all;
+}
+
+.header-inner__url:hover {
+  background-color: #c7d9d5;
 }
 
 /* Yoga */
 
 .yoga {
   position: relative;
-  padding-bottom: 200px;
+  padding-bottom: 202px;
 }
 
 .yoga-img {
@@ -190,13 +206,18 @@ ul {
   border: none;
   border-radius: 10px;
   margin-top: 27px;
+  transition: 0.3s all;
+}
+
+.yoga-inner__btn:hover {
+  background-color: rgb(116, 186, 196);
 }
 
 /* About */
 
 .about {
   background-color: var(--main-color);
-  padding: 130px 0 120px;
+  padding: 73px 0 100px;
 }
 
 .about-inner__title {
@@ -239,7 +260,7 @@ ul {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 100px 0 200px;
+  padding: 100px 0 110px;
 }
 
 .stats-inner__title {
@@ -332,6 +353,12 @@ ul {
   background-color: var(--text-color);
   border: none;
   border-radius: 4px;
+  transition: 0.3s all;
+}
+
+.instructor-inner__left-btn:hover {
+  color: var(--text-color);
+  background-color: rgb(116, 186, 196);
 }
 
 .instructor-inner__right-img {
@@ -349,7 +376,7 @@ ul {
 
 .experience-inner {
   display: flex;
-  padding: 100px 0 70px;
+  padding: 100px 0 84px;
 }
 
 .experience-inner__right {
@@ -374,10 +401,14 @@ ul {
   background-color: var(--main-color);
 }
 
+.experience-inner__right-btn:hover {
+  background-color: rgb(65, 110, 121);
+}
+
 /* Pricing */
 
 .pricing {
-  padding: 120px 0 100px;
+  padding: 98px 0 100px;
   background-color: var(--main-color);
 }
 
@@ -429,6 +460,10 @@ ul {
   background-color: var(--main-color);
 }
 
+.pricing-inner__card-btn:hover {
+  background-color: rgb(65, 110, 121);
+}
+
 /* Trainer */
 
 .trainer {
@@ -436,7 +471,7 @@ ul {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 75px 0 190px;
+  padding: 75px 0 153px;
 }
 
 .trainer-inner {
@@ -490,21 +525,25 @@ ul {
 .update-inner__form-btn {
   width: 220px;
   height: 65px;
-  border: none;
-  border-radius: 50px;
-}
-
-input[value="Subscribe"] {
   font-family: "Baloo Bhai 2", serif;
   font-size: 25px;
   font-weight: 700;
-  color: var(--main-color);
+  color: #6c9894;
+  background-color: rgb(227, 245, 247);
+  border: none;
+  border-radius: 50px;
+  transition: 0.3s all;
+}
+
+.update-inner__form-btn:hover {
+  color: #fff;
+  background-color: rgb(116, 186, 196);
 }
 
 /* Footer */
 
 .footer {
-  padding: 170px 0 100px;
+  padding: 170px 0 111px;
 }
 
 .footer-inner {
@@ -524,6 +563,11 @@ input[value="Subscribe"] {
   font-size: 22px;
   color: var(--main-color);
   padding-bottom: 15px;
+  transition: 0.3s all;
+}
+
+.footer-inner__link:hover {
+  color: #2f2f2f;
 }
 
 .footer-inner__nav {
