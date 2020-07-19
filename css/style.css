@@ -238,6 +238,10 @@ ul {
   text-align: center;
 }
 
+.about-inner__item {
+  margin: 0 15px;
+}
+
 .about-inner__img {
   padding-bottom: var(--main-padding-bottom);
 }
@@ -260,7 +264,7 @@ ul {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 100px 0 110px;
+  padding: 100px 0 165px;
 }
 
 .stats-inner__title {
@@ -271,17 +275,21 @@ ul {
 
 .stats-inner__text {
   font-size: 30px;
-  padding-bottom: 130px;
+  padding-bottom: 75px;
   color: var(--main-color);
 }
 
 .stats-inner__cards {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
+.stats-inner__card {
+  margin: 15px;
+}
+
 .stats-inner__card-circle {
-  display: block;
   width: 330px;
   height: 330px;
   background-color: rgba(255, 255, 255, 0);
@@ -327,6 +335,7 @@ ul {
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin: 15px;
 }
 
 .instructor-inner__left-title,
@@ -415,6 +424,7 @@ ul {
 .pricing-inner__cards {
   display: flex;
   justify-content: space-between;
+  padding: 0 15px;
 }
 
 .pricing-inner__title,
@@ -578,4 +588,40 @@ ul {
   background-color: var(--main-color);
   border: 1px solid var(--main-color);
   border-radius: 50px;
+}
+
+@media (max-width: 1024px) {
+  /* Header */
+
+  .header-inner__links {
+    padding-right: 25px;
+  }
+
+  /* Yoga */
+
+  .yoga {
+    padding: 0 15px 110px 15px;
+  }
+
+  .yoga-img {
+    display: none;
+  }
+
+  .yoga-inner__title {
+    font-size: 68px;
+  }
+
+  /* about */
+
+  /* Instructor */
+
+  .instructor-inner__left-title,
+  .experience-inner__right-title {
+    font-size: 58px;
+  }
+
+  .instructor-inner__left-text,
+  .experience-inner__right-text {
+    font-size: 22px;
+  }
 }
