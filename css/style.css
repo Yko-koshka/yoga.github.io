@@ -109,7 +109,7 @@ ul {
   margin: 0 auto;
 }
 
-.top_inner {
+.inner__top_entry {
   width: 63%;
   margin: 0 auto;
   text-align: center;
@@ -435,6 +435,7 @@ ul {
 
 .pricing-inner__text {
   font-size: 30px;
+  padding-bottom: 30px;
 }
 
 .pricing-inner__card {
@@ -443,7 +444,7 @@ ul {
   border-radius: 6px;
   text-align: center;
   color: var(--main-color);
-  padding: 40px 0 30px;
+  padding: 40px 15px 30px;
 }
 
 .pricing-inner__card-subtitle,
@@ -559,6 +560,7 @@ ul {
 .footer-inner {
   display: flex;
   justify-content: space-around;
+  padding: 0 15px;
 }
 
 .footer-inner__address-title,
@@ -590,7 +592,7 @@ ul {
   border-radius: 50px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1080px) {
   /* Header */
 
   .header-inner__links {
@@ -613,6 +615,27 @@ ul {
 
   /* about */
 
+  /* stats */
+  .stats {
+    padding: 65px 0 110px;
+  }
+
+  .stats-inner__title {
+    padding-bottom: 30px;
+  }
+
+  .stats-inner__text {
+    padding-bottom: 30px;
+  }
+
+  .stats-inner__card {
+    margin: 20px 50px;
+  }
+
+  .stats-inner__card:nth-child(3) {
+    margin: 0 auto;
+  }
+
   /* Instructor */
 
   .instructor-inner__left-title,
@@ -623,5 +646,76 @@ ul {
   .instructor-inner__left-text,
   .experience-inner__right-text {
     font-size: 22px;
+  }
+
+  /* Pricing */
+
+  .pricing-inner__card-subtitle,
+  .pricing-inner__card-price {
+    font-size: 32px;
+  }
+
+  .pricing-inner__card-btn {
+    width: 100%;
+  }
+
+  /* Update */
+  .update-inner__form-input {
+    margin-bottom: 30px;
+  }
+
+  .update-inner__title {
+    font-size: 64px;
+  }
+}
+
+@media (max-width: 860px) {
+  /* header */
+  .header-inner__links {
+    display: none;
+  }
+
+  /* yoga */
+
+  .yoga-inner {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .yoga-inner__right {
+    width: 100%;
+  }
+
+  /* about */
+
+  .inner__top_entry {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  /* Instructor */
+
+  .instructor-inner__left-title,
+  .experience-inner__right-title {
+    font-size: 46px;
+  }
+
+  /* stats */
+
+  .stats-inner__cards {
+    flex-direction: column;
+  }
+
+  .stats-inner__card {
+    margin: 0 auto;
+    margin-bottom: 45px;
+  }
+
+  /* Pricing */
+
+  .pricing-inner__cards {
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0 50px;
   }
 }
