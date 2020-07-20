@@ -569,6 +569,12 @@ ul {
   color: var(--main-color);
 }
 
+.footer-inner__address-text {
+  width: 500px;
+  font-size: 25px;
+  color: var(--main-color);
+}
+
 .footer-inner__link {
   font-family: "Montserrat", serif;
   font-weight: 400;
@@ -659,7 +665,16 @@ ul {
     width: 100%;
   }
 
+  /* trainer */
+  .trainer {
+    padding: 75px 0 60px;
+  }
+
   /* Update */
+
+  .update {
+    padding: 55px 0 84px;
+  }
   .update-inner__form-input {
     margin-bottom: 30px;
   }
@@ -667,6 +682,58 @@ ul {
   .update-inner__title {
     font-size: 64px;
   }
+
+  /* Footer */
+
+  .footer {
+    padding: 70px 0 80px;
+  }
+
+  .footer-inner {
+    flex-wrap: wrap;
+  }
+
+  .footer-inner__links {
+    padding-left: 25px;
+  }
+}
+
+@media (max-width: 920px) {
+  /* pricing */
+
+  .pricing-inner__card-subtitle,
+  .pricing-inner__card-price {
+    font-size: 26px;
+  }
+
+  .pricing-inner__card-text {
+    font-size: 18px;
+  }
+
+  .pricing-inner__card-btn {
+    color: var(--text-color);
+    background-color: var(--main-color);
+  }
+
+  /* Instructor */
+
+  .instructor-inner__left-btn,
+  .experience-inner__right-btn,
+  .pricing-inner__card-btn {
+    font-size: 22px;
+  }
+
+  /* Update */
+
+  .update-inner__title {
+    font-size: 52px;
+  }
+
+  .update-inner__text {
+    font-size: 26px;
+  }
+
+  /* Footer */
 }
 
 @media (max-width: 860px) {
@@ -691,6 +758,14 @@ ul {
   .inner__top_entry {
     width: 100%;
     padding: 0 15px;
+  }
+
+  .about-inner__subtitle {
+    font-size: 28px;
+  }
+
+  .about-inner__body-text {
+    font-size: 22px;
   }
 
   /* Instructor */
@@ -718,4 +793,136 @@ ul {
     flex-wrap: wrap;
     padding: 0 50px;
   }
+
+  .pricing-inner__card {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  /* Trainer */
+
+  .trainer-inner__text,
+  .trainer-inner__nick {
+    font-size: 36px;
+  }
+
+  /* Update */
+
+  .update-inner__form-input {
+    width: 100%;
+  }
+
+  /* Footer */
+
+  .footer-inner__address {
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* About */
+
+  .about-inner__items {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .about-inner__item {
+    width: 50%;
+    margin-bottom: 60px;
+  }
+
+  /* Instructor */
+
+  .instructor-inner {
+    flex-direction: column-reverse;
+    background-color: #fff;
+  }
+
+  .instructor-inner__left,
+  .instructor-inner__right,
+  .experience-inner__left,
+  .experience-inner__right {
+    width: 100%;
+  }
+
+  .instructor-inner__left {
+    padding: 30px;
+  }
+
+  .instructor-inner__left-title,
+  .instructor-inner__left-text {
+    color: var(--main-color);
+  }
+
+  .instructor-inner__left-btn {
+    display: inline-block;
+    color: var(--text-color);
+    background-color: var(--main-color);
+  }
+
+  .instructor-inner__left-btn:hover {
+    background-color: rgb(65, 110, 121);
+  }
+
+  /* Experience */
+
+  .experience-inner {
+    flex-direction: column;
+    padding: 50px 0 84px;
+  }
+
+  .experience-inner__right {
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+  }
+
+  .experience-inner__left-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .footer-inner__address-text {
+    width: 100%;
+  }
+}
+
+@media (max-width: 426px) {
+  /* Yoga */
+
+  .yoga-inner__title {
+    font-size: 40px;
+  }
+
+  /* About */
+
+  .about-inner__title {
+    font-size: 40px;
+  }
+
+  .about-inner__text {
+    font-size: 22px;
+  }
+
+  .about-inner__subtitle {
+    font-size: 24px;
+  }
+
+  .about-inner__body-text {
+    font-size: 20px;
+  }
+
+  /* Stats */
+
+  .stats-inner__title {
+    font-size: 53px;
+    padding-bottom: 0;
+  }
+
+  .stats-inner__text {
+    font-size: 20px;
+  }
+
+  /* Footer */
 }
