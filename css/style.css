@@ -129,9 +129,19 @@ header {
   background-color: #e2ede8;
 }
 
-.header-inner__img_active {
+.header_active .header-inner__img {
+  padding: 5px;
+  background-color: #a7d7c500;
   width: 50px;
-  padding: 10px;
+}
+
+.header_active .header-inner__url {
+  font-size: 16px;
+  padding: 5px 25px;
+}
+
+.header_active .header-inner__link {
+  padding-left: 40px;
 }
 
 .header-inner {
@@ -141,8 +151,10 @@ header {
 }
 
 .header-inner__img {
+  width: 100%;
   background-color: #a7d7c5;
   padding: 30px 10px 25px;
+  transition: 0.3s all;
 }
 
 .header-inner__nav {
