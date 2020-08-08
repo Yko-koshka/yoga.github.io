@@ -1,51 +1,29 @@
-/* lato-700 - latin */
+/* exo-2-700 - cyrillic */
 @font-face {
-  font-family: "Lato";
+  font-family: "Exo 2";
   font-style: normal;
   font-weight: 700;
-  src: local("Lato Bold"), local("Lato-Bold"),
-    url("../fonts/lato-v16-latin-700.woff2") format("woff2"),
-    url("../fonts/lato-v16-latin-700.woff") format("woff");
+  src: local(""), url("../fonts/exo-2-v9-cyrillic-700.woff2") format("woff2"),
+    url("../fonts/exo-2-v9-cyrillic-700.woff") format("woff");
 }
 
-/* montserrat-regular - latin */
+/* montserrat-regular - cyrillic */
 @font-face {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   src: local("Montserrat Regular"), local("Montserrat-Regular"),
-    url("../fonts/montserrat-v14-latin-regular.woff2") format("woff2"),
-    url("../fonts/montserrat-v14-latin-regular.woff") format("woff");
+    url("../fonts/montserrat-v14-cyrillic-regular.woff2") format("woff2"),
+    url("../fonts/montserrat-v14-cyrillic-regular.woff") format("woff");
 }
-
-/* montserrat-700 - latin */
+/* montserrat-700 - cyrillic */
 @font-face {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
   src: local("Montserrat Bold"), local("Montserrat-Bold"),
-    url("../fonts/montserrat-v14-latin-700.woff2") format("woff2"),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("../fonts/montserrat-v14-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-/* baloo-bhai-2-regular - latin */
-@font-face {
-  font-family: "Baloo Bhai 2";
-  font-style: normal;
-  font-weight: 400;
-  src: local("Baloo Bhai 2 Regular"), local("BalooBhai2-Regular"),
-    url("../fonts/baloo-bhai-2-v1-latin-regular.woff2") format("woff2"),
-    url("../fonts/baloo-bhai-2-v1-latin-regular.woff") format("woff");
-}
-/* baloo-bhai-2-700 - latin */
-@font-face {
-  font-family: "Baloo Bhai 2";
-  font-style: normal;
-  font-weight: 700;
-  src: local("Baloo Bhai 2 Bold"), local("BalooBhai2-Bold"),
-    url("../fonts/baloo-bhai-2-v1-latin-700.woff2") format("woff2"),
-    url("../fonts/baloo-bhai-2-v1-latin-700.woff") format("woff");
+    url("../fonts/montserrat-v14-cyrillic-700.woff2") format("woff2"),
+    url("../fonts/montserrat-v14-cyrillic-700.woff") format("woff");
 }
 
 :root {
@@ -81,10 +59,10 @@ h4,
 h5,
 h6 {
   margin: 0;
-  font-family: "Baloo Bhai 2", serif;
+  font-family: "Exo 2", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  line-height: 56px;
+  line-height: 1;
 }
 
 p {
@@ -94,7 +72,7 @@ p {
 a,
 button {
   text-decoration: none;
-  font-family: "Baloo Bhai 2", serif;
+  font-family: "Exo 2", serif;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -243,7 +221,7 @@ header {
 }
 
 .yoga-inner__title {
-  font-size: 95px;
+  font-size: 66px;
   color: var(--main-color);
   padding-bottom: 20px;
 }
@@ -257,7 +235,7 @@ header {
 .yoga-inner__btn {
   min-width: 170px;
   min-height: 35px;
-  font-family: "Lato", serif;
+  font-family: "Exo 2", serif;
   font-size: 17px;
   color: var(--text-color);
   background-color: var(--main-color);
@@ -279,13 +257,13 @@ header {
 }
 
 .about-inner__title {
-  font-size: 75px;
+  font-size: 50px;
   color: var(--text-color);
   padding-bottom: var(--main-padding-bottom);
 }
 
 .about-inner__text {
-  font-size: 30px;
+  font-size: 26px;
   color: var(--text-color);
   padding-bottom: var(--main-padding-bottom);
 }
@@ -297,6 +275,7 @@ header {
 }
 
 .about-inner__item {
+  width: 33.33333%;
   margin: 0 15px;
 }
 
@@ -305,13 +284,13 @@ header {
 }
 
 .about-inner__subtitle {
-  font-size: 36px;
+  font-size: 26px;
   color: var(--text-color);
   padding-bottom: var(--main-padding-bottom);
 }
 
 .about-inner__body-text {
-  font-size: 22px;
+  font-size: 18px;
   color: var(--text-color);
 }
 
@@ -326,13 +305,13 @@ header {
 }
 
 .stats-inner__title {
-  font-size: 75px;
+  font-size: 50px;
   padding-bottom: 60px;
   color: var(--main-color);
 }
 
 .stats-inner__text {
-  font-size: 30px;
+  font-size: 26px;
   padding-bottom: 75px;
   color: var(--main-color);
 }
@@ -356,16 +335,18 @@ header {
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin-top: 100px;
+  margin-top: 85px;
 }
 
 .stats-inner__circle-date {
+  font-family: "Exo 2", serif;
   font-size: 66px;
+  font-weight: 900;
   color: var(--main-color);
 }
 
 .stats-inner__circle-text {
-  font-size: 26px;
+  font-size: 35px;
   padding: 0 35px;
   color: var(--main-color);
 }
@@ -396,13 +377,14 @@ header {
 .instructor-inner__left-title,
 .instructor-inner__left-text,
 .experience-inner__right-title {
-  font-size: 75px;
+  font-size: 46px;
+  padding-bottom: 30px;
   color: var(--text-color);
 }
 
 .instructor-inner__left-text,
 .experience-inner__right-text {
-  font-size: 30px;
+  font-size: 22px;
   padding-bottom: 55px;
 }
 
@@ -484,17 +466,20 @@ header {
 
 .pricing-inner__title,
 .pricing-inner__text {
-  font-size: 75px;
+  font-size: 50px;
   color: var(--text-color);
   padding-bottom: 30px;
 }
 
 .pricing-inner__text {
-  font-size: 30px;
+  font-size: 26px;
   padding-bottom: 30px;
 }
 
 .pricing-inner__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   width: 30%;
   background-color: #fff;
   border-radius: 6px;
@@ -506,6 +491,7 @@ header {
 .pricing-inner__card-subtitle,
 .pricing-inner__card-price {
   font-size: 38px;
+  padding-bottom: 25px;
 }
 
 .pricing-inner__card-price {
@@ -523,6 +509,7 @@ header {
 }
 
 .pricing-inner__card-btn {
+  margin: 0 auto;
   color: var(--text-color);
   background-color: var(--main-color);
 }
@@ -572,9 +559,9 @@ header {
 
 .update-inner__title,
 .update-inner__text {
-  font-size: 75px;
+  font-size: 50px;
   color: var(--text-color);
-  padding-bottom: var(--main-padding-bottom);
+  padding-bottom: 30px;
 }
 
 .update-inner__text {
@@ -592,7 +579,7 @@ header {
 .update-inner__form-btn {
   width: 220px;
   height: 65px;
-  font-family: "Baloo Bhai 2", serif;
+  font-family: "Exo 2", serif;
   font-size: 25px;
   font-weight: 700;
   color: #6c9894;
@@ -622,6 +609,7 @@ header {
 .footer-inner__address-title,
 .footer-inner__links-title {
   font-size: 34px;
+  padding-bottom: 30px;
   color: var(--main-color);
 }
 
