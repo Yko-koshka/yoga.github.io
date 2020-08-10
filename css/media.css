@@ -5,18 +5,37 @@
     padding-right: 25px;
   }
 
-  /* Yoga */
-
-  .yoga {
-    padding: 0 15px 110px 15px;
+  .header-inner__link {
+    padding-left: 20px;
   }
+
+  /* Yoga */
 
   .yoga-img {
     display: none;
   }
 
-  .yoga-inner__title {
-    font-size: 68px;
+  .inner__title_all {
+    font-size: 44px;
+  }
+  .yoga-inner__text {
+    font-size: 16px;
+  }
+
+  .yoga-inner__btn {
+    font-size: 12px;
+  }
+
+  /* About */
+
+  .about-inner__items {
+    flex-direction: column;
+  }
+
+  .about-inner__item {
+    width: 100%;
+    margin-bottom: 60px;
+    margin-left: 0;
   }
 
   /* stats */
@@ -34,11 +53,6 @@
 
   /* Instructor */
 
-  .instructor-inner__left-title,
-  .experience-inner__right-title {
-    font-size: 58px;
-  }
-
   .instructor-inner__left-text,
   .experience-inner__right-text {
     font-size: 22px;
@@ -53,12 +67,18 @@
 
   .pricing-inner__card-btn {
     width: 100%;
+    font-size: 18px;
   }
 
   /* trainer */
 
   .trainer {
     padding: 75px 0 60px;
+  }
+
+  .trainer-inner__text,
+  .trainer-inner__nick {
+    font-size: 26px;
   }
 
   /* Update */
@@ -70,10 +90,6 @@
     margin-bottom: 30px;
   }
 
-  .update-inner__title {
-    font-size: 64px;
-  }
-
   /* Footer */
 
   .footer {
@@ -82,28 +98,42 @@
 
   .footer-inner {
     flex-wrap: wrap;
+    justify-content: flex-start;
   }
 
   .footer-inner__links {
-    padding-left: 25px;
+    padding-left: 0;
   }
 }
 
 @media (max-width: 920px) {
-  /* Header */
-
-  .header-inner__link {
-    padding-left: 30px;
+  .inner__title_all {
+    font-size: 24px;
   }
+
+  .inner__title_all {
+    font-size: 24px;
+  }
+
+  /* Yoga */
+
+  .yoga {
+    padding: 80px 0 75px;
+  }
+
   /* pricing */
 
   .pricing-inner__card-subtitle,
   .pricing-inner__card-price {
-    font-size: 26px;
+    font-size: 20px;
+  }
+
+  .pricing-inner__text {
+    font-size: 18px;
   }
 
   .pricing-inner__card-text {
-    font-size: 18px;
+    font-size: 14px;
   }
 
   .pricing-inner__card-btn {
@@ -116,22 +146,31 @@
   .instructor-inner__left-btn,
   .experience-inner__right-btn,
   .pricing-inner__card-btn {
-    font-size: 22px;
+    font-size: 16px;
   }
 
   /* Update */
 
-  .update-inner__title {
-    font-size: 52px;
+  .update-inner__text {
+    font-size: 16px;
   }
 
-  .update-inner__text {
-    font-size: 26px;
+  .update-inner__form-btn {
+    margin-top: 0;
   }
 }
 
 @media (max-width: 860px) {
+  .inner__top_entry {
+    width: 100%;
+    padding: 0 15px;
+  }
   /* Burger */
+
+  .header-inner__img {
+    background-color: #a7d7c500;
+    padding: 0;
+  }
 
   .header__burger {
     display: block;
@@ -165,10 +204,6 @@
     margin-right: 0;
     margin-bottom: 30px;
     padding-left: 0;
-  }
-
-  .header-inner__link:last-child {
-    margin-bottom: 0;
   }
 
   .header-inner__url {
@@ -226,30 +261,38 @@
     width: 100%;
   }
 
-  /* about */
+  /* About  */
 
-  .inner__top_entry {
-    width: 100%;
-    padding: 0 15px;
+  .about-inner__text {
+    font-size: 20px;
   }
 
   .about-inner__subtitle {
-    font-size: 28px;
+    font-size: 18px;
   }
 
   .about-inner__body-text {
-    font-size: 22px;
+    font-size: 16px;
   }
 
-  /* Instructor */
+  /* Instructor and Experience */
 
   .instructor-inner__left-title,
   .experience-inner__right-title {
-    font-size: 46px;
+    font-size: 26px;
     padding-bottom: 20px;
   }
 
+  .instructor-inner__left-text,
+  .experience-inner__right-text {
+    font-size: 16px;
+  }
+
   /* stats */
+
+  .stats-inner__text {
+    font-size: 16px;
+  }
 
   .stats-inner__circles {
     flex-direction: column;
@@ -262,22 +305,18 @@
 
   /* Pricing */
 
+  .pricing-inner__text {
+    font-size: 18px;
+  }
+
   .pricing-inner__cards {
     flex-direction: column;
-    flex-wrap: wrap;
-    padding: 0 50px;
   }
 
   .pricing-inner__card {
-    width: 100%;
+    width: 70%;
+    margin: 0 auto;
     margin-bottom: 30px;
-  }
-
-  /* Trainer */
-
-  .trainer-inner__text,
-  .trainer-inner__nick {
-    font-size: 36px;
   }
 
   /* Update */
@@ -294,26 +333,10 @@
 }
 
 @media (max-width: 768px) {
-  /* Yoga */
-
-  .yoga {
-    padding: 15px 15px 55px 15px;
-  }
-
   /* About */
 
   .about {
     padding: 73px 0 60px;
-  }
-
-  .about-inner__items {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .about-inner__item {
-    width: 50%;
-    margin-bottom: 60px;
   }
 
   .about-inner__item:nth-child(3) {
@@ -360,23 +383,6 @@
     padding: 70px 0 60px;
   }
 
-  .pricing-inner__title {
-    font-size: 58px;
-  }
-
-  /* Trainer */
-
-  .trainer-inner__text,
-  .trainer-inner__nick {
-    font-size: 26px;
-  }
-
-  /* Update */
-
-  .update-inner__title {
-    font-size: 42px;
-  }
-
   /* Experience */
 
   .experience-inner {
@@ -404,6 +410,19 @@
 
   /* Footer */
 
+  .footer-inner__address-title,
+  .footer-inner__links-title {
+    font-size: 22px;
+  }
+
+  .footer-inner__address-text {
+    font-size: 20px;
+  }
+
+  .footer-inner__link {
+    font-size: 16px;
+  }
+
   .footer-inner__address-text {
     width: 100%;
   }
@@ -420,22 +439,16 @@
     padding-bottom: 20px;
   }
 
-  .yoga-inner__title {
-    font-size: 40px;
+  .yoga-inner__text {
+    font-size: 16px;
+    color: var(--main-color);
+    padding: 0;
   }
 
   /* About */
 
-  .about-inner__item {
-    width: 100%;
-  }
-
-  .about-inner__title {
-    font-size: 40px;
-  }
-
   .about-inner__text {
-    font-size: 22px;
+    font-size: 18px;
   }
 
   .about-inner__subtitle {
@@ -447,10 +460,6 @@
   }
 
   /* Stats */
-
-  .stats-inner__title {
-    font-size: 53px;
-  }
 
   .stats-inner__text {
     font-size: 20px;
@@ -467,6 +476,7 @@
   }
 
   .pricing-inner__card {
+    width: 100%;
     padding: 25px 15px 25px;
   }
 
@@ -477,11 +487,6 @@
 
   .trainer-inner {
     padding: 0 15px;
-  }
-
-  /* Update */
-  .update-inner__title {
-    font-size: 34px;
   }
 
   /* Footer */
@@ -501,6 +506,8 @@
   .yoga-inner__text {
     font-size: 18px;
   }
+
+  /* Instructor */
 
   .instructor-inner__left-btn,
   .experience-inner__right-btn {
