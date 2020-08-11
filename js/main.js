@@ -47,3 +47,7 @@ function burger() {
 }
 
 burger();
+
+// WOW
+
+new WOW().init();
